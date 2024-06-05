@@ -1,0 +1,305 @@
+<div id="form">
+  <div class="col-md-6">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="form-horizontal">
+          <div class="form-group">
+            <label for="" class="col-sm-3 control-label">Tanggal</label>
+            <div class="col-sm-4">
+              <input type="text" id="tgl_registrasi" name="tgl_registrasi" class="form-control tanggal" value="2024-03-02">
+            </div>
+            <label for="" class="col-sm-2 control-label">Jam</label>
+            <div class="col-sm-3">
+              <input type="text" id="jam_reg" name="jam_reg" class="form-control jam" value="07:15:39">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="pasien" class="col-sm-3 control-label">Pasien</label>
+            <div class="col-sm-9">
+              <input type="text" name="pasien" class="form-control" placeholder="Cari nama pasien/nomor rekam medik" value="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="kd_poli" class="col-sm-3 control-label">Poliklinik</label>
+            <div class="col-sm-9">
+              <select class="form-control" name="kd_poli">
+                                <option value="-">-</option>
+                                <option value="ANA">POLIKLINIK ANAK</option>
+                                <option value="ANT">POLIKLINIK ANASTESI</option>
+                                <option value="BED">POLIKLINIK BEDAH UMUM</option>
+                                <option value="GIG">POLIKLINIK GIGI DAN MULUT</option>
+                                <option value="GIZ">INSTALASI GIZI</option>
+                                <option value="HDL">INSTALASI HEMODIALISA</option>
+                                <option value="INT" selected>POLIKLINIK PENYAKIT DALAM</option>
+                                <option value="IRM">INSTALASI REHAB MEDIK</option>
+                                <option value="JAN">POLIKLINIK JANTUNG</option>
+                                <option value="JIW">POLIKLINIK JIWA</option>
+                                <option value="KIA">POLIKLINIK KIA</option>
+                                <option value="KLT">POLIKLINIK KULIT DAN KELAMIN</option>
+                                <option value="LAB">INSTALASI LABORATORIUM</option>
+                                <option value="MAT">POLIKLINIK MATA</option>
+                                <option value="OBG">POLIKLINIK OBGYN</option>
+                                <option value="OBT">BELI OBAT</option>
+                                <option value="ORT">POLIKLINIK ORTHOPEDI</option>
+                                <option value="RAD">INSTALASI RADIOLOGI</option>
+                                <option value="SAR">POLIKLINIK SARAF</option>
+                                <option value="THT">POLIKLINIK THT</option>
+                                <option value="UMU">POLIKLINIK UMUM</option>
+                                <option value="URO">POLIKLINIK UROLOGI</option>
+                              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="id_dokter" class="col-sm-3 control-label">Dokter</label>
+            <div class="col-sm-9">
+              <select class="form-control" name="kd_dokter">
+                                <option value="-">-</option>
+                                <option value="01051989370">dr. ERLISA DEVI SAPTIRINA PUTRI</option>
+                                <option value="01121950">dr. SARDJI, Sp.PD, FINASIM</option>
+                                <option value="02051979092">dr. ADITYA KISARA, Sp An</option>
+                                <option value="02061976">dr. IQBAL MUCHAMMAD, Sp. S</option>
+                                <option value="03101986">dr. RIZKO PUTRA PRADANA, Sp.PD</option>
+                                <option value="06061986406">AYU FITRIA HELMIYATI, S.Gz</option>
+                                <option value="06061995485">dr. WINNO PRADANA UTOMO</option>
+                                <option value="06071993460">dr. ENYKE CIPTA HERAWATI</option>
+                                <option value="09081984">dr. EDI SUBANGKIT</option>
+                                <option value="10051988538">dr. FACHSYAR HIDAYAT, Sp.An-TI</option>
+                                <option value="11071950">dr. SULURI BURHAN, Sp.A</option>
+                                <option value="11071984354">dr. ARIF DJULIAR HADI SAPUTRA</option>
+                                <option value="11071997530">dr. IRVING BURHAM SULISTYA</option>
+                                <option value="12051990515">dr. VIDYA HANA DWI AYUNINGTYAS,Sp.DV</option>
+                                <option value="12111995494">dr. ANNISA NABIILA</option>
+                                <option value="12121987">dr. ADESTI PERMANASARI,Sp.KFR</option>
+                                <option value="13051951">dr. SUWARYO MADSUKADI, Sp.OG</option>
+                                <option value="15011970138">drg. M. TAUFIK HADI</option>
+                                <option value="16021964">dr. M. WAHYU R, Sp.KK</option>
+                                <option value="16081974319">dr. AYU TRIMURTI</option>
+                                <option value="16081987">dr. FITRA HARDIAN PRISNAMURTI, Sp.U</option>
+                                <option value="17021993487">dr. TAKUL USMAN</option>
+                                <option value="18021976063">dr. HARI KURNIAWAN, Sp OG</option>
+                                <option value="19051989529">dr. ADITYA RIADI SYAFEI, Sp.PD</option>
+                                <option value="19111979" selected>dr. NOVIA ETTY PARMAWATI., Sp.PD</option>
+                                <option value="21041974">dr. NETIANA, Sp.THT-KL</option>
+                                <option value="21101993">dr. M. FARIS WAFAUL AHYAR</option>
+                                <option value="22081976">dr. ARIF SHIDIQ, Sp.Rad</option>
+                                <option value="25041987484">dr. TANTRI BAGUS SATRIO, Sp.B</option>
+                                <option value="26011990">dr. SADEWI INDAH PUSPITASARI, Sp.N</option>
+                                <option value="26021980150">dr. LUKMAN HAKIM, Sp.OT</option>
+                                <option value="27081965">dr. DHARMA BUDI, Sp.A</option>
+                                <option value="27121951">dr. SADIMAN, Sp.B</option>
+                                <option value="29011974">dr. WIDODO SARJANA.,Sp.KJ</option>
+                                <option value="29011994545">dr. LUTFI AULIA SUPRIYADI</option>
+                                <option value="29051986">dr. EKO WIDAYANTO, Sp.M.,M.Ked.Klin</option>
+                                <option value="30071989495">dr. DIBA ANINDHITA NANDAWARDHANI</option>
+                                <option value="D0000004">dr. ENDAH KURNIA, Sp.PK,.M.Kes, MPH. </option>
+                              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="id_penjamin" class="col-sm-3 control-label">Penjamin</label>
+            <div class="col-sm-9">
+              <select class="form-control" name="kd_pj">
+                                <option value="A61">-</option>
+                                <option value="AAB">Asuransi Astra Buana (rawat jalan)</option>
+                                <option value="ABC">Asuransi BCA</option>
+                                <option value="ABD">Abda</option>
+                                <option value="ABN">Asuransi BNI</option>
+                                <option value="ABR">Asuransi BRI</option>
+                                <option value="ACA">Asuransi Central Asia</option>
+                                <option value="ACP">Asuransi Cakrawala Proteksi</option>
+                                <option value="ADM">ADMEDIKA</option>
+                                <option value="AIA">Asurasi Intra Asia</option>
+                                <option value="AIF">AIA Financial</option>
+                                <option value="AJA">Asuransi Jiwa Astra</option>
+                                <option value="ALA">Owlexa (Aplikasinusa Lintas Artha) </option>
+                                <option value="AMA">Adi Mulia Medika</option>
+                                <option value="ASH">Asuransi Harta</option>
+                                <option value="AVR">avrist</option>
+                                <option value="AXA">Axa</option>
+                                <option value="BKK">BKKBN</option>
+                                <option value="BPJ" selected>BPJS Kesehatan</option>
+                                <option value="BPK">BPJS TEKA</option>
+                                <option value="BPR">BP BERAU</option>
+                                <option value="CAR">Asuransi Jiwa Central Asia Raya (CAR)</option>
+                                <option value="EXN">Exxon</option>
+                                <option value="FUH">Fullerton Health</option>
+                                <option value="FWD">Asuransi FWD</option>
+                                <option value="GAM">GARDA MEDIKA (ASURANSI ASTRA BUANA) ri</option>
+                                <option value="GEA">Great Eastern</option>
+                                <option value="GEN">Generali</option>
+                                <option value="ILG">PT. Integrasi Layanan Global</option>
+                                <option value="INH">Inhealth</option>
+                                <option value="INI">Inhealth Idemnity</option>
+                                <option value="INM">Inhealth Managecare </option>
+                                <option value="JSR">Jasa Raharja</option>
+                                <option value="KAI">KAI</option>
+                                <option value="KAR">Karyawan</option>
+                                <option value="KKR">Keluarga Karyawan</option>
+                                <option value="KPR">PT. Kilang Pertamina</option>
+                                <option value="KSK">Asuransi KSK</option>
+                                <option value="LIP">LIPPO</option>
+                                <option value="MAG">Asuransi Multi Artha Guna</option>
+                                <option value="MAN">Manulife</option>
+                                <option value="MED">MEDITAP HEALTHCARE</option>
+                                <option value="MEI">Medco energi internasional</option>
+                                <option value="MEP">Medika Plaza</option>
+                                <option value="PBI">Pelabuhan Indonesia</option>
+                                <option value="PCM">-</option>
+                                <option value="PCR">Pacifik Cross</option>
+                                <option value="PGN">Perusahaan Gas Negara (PGN)</option>
+                                <option value="PHE">Pertamina Hulu Energi</option>
+                                <option value="PLN">PLN</option>
+                                <option value="PLU">Pertamina Lubricants</option>
+                                <option value="PPN">Pertamina Patra Niaga</option>
+                                <option value="PTM">Pertamedika</option>
+                                <option value="RLC">Reliance</option>
+                                <option value="SMS">Sinar Mas</option>
+                                <option value="SOI">Sompo Insurance</option>
+                                <option value="SOS">PT. ASIH EKA ABADI (SOS)</option>
+                                <option value="TKF">Takaful</option>
+                                <option value="TLK">YAKES TELKOM</option>
+                                <option value="TRT">Tirta</option>
+                                <option value="TTS">Titis Sampurna</option>
+                                <option value="UMU">Umum</option>
+                                <option value="VCT">Victoria Insurance</option>
+                                <option value="ZRC">Zurich Insurance</option>
+                              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="" class="col-sm-3 control-label">No. Rawat</label>
+            <div class="col-sm-4">
+              <input type="text" id="no_rawat" name="no_rawat" class="form-control" value="2024/03/02/000147" disabled>
+              <input name="no_rawat_baru" class="form-control" type="hidden" value="" id="no_rawat_baru" >
+            </div>
+            <label for="" class="col-sm-2 control-label">No. Reg</label>
+            <div class="col-sm-3">
+              <input type="text" id="no_reg" name="no_reg" class="form-control" value="058" disabled>
+              <input name="no_reg_baru" class="form-control" type="hidden" value="" id="no_reg_baru" >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div id="pasien">
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="form-horizontal">
+          <div class="form-group">
+            <label for="no_rkm_medis" class="col-sm-3 control-label">Nomor RM</label>
+            <div class="col-sm-9">
+              <input type="text" name="no_rkm_medis" class="form-control" placeholder="Nomor rekam medik" value="183962" readonly>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="nama_pasien" class="col-sm-3 control-label">Nama Pasien</label>
+            <div class="col-sm-9">
+              <input type="text" name="nm_pasien" class="form-control" placeholder="Nama pasien" value="TASRI, NY" readonly>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="tgl_lahir" class="col-sm-3 control-label">Tanggal Lahir</label>
+            <div class="col-sm-9">
+              <input type="text" name="tgl_lahir" class="form-control" placeholder="Tanggal Lahir" value="1961-12-29" readonly>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="jenis_kelamin" class="col-sm-3 control-label">Jenis Kelamin</label>
+            <div class="col-sm-9">
+              <input type="text" name="jk" class="form-control" placeholder="Jenis Kelamin" value="Perempuan" readonly>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="telepon" class="col-sm-3 control-label">Telepon</label>
+            <div class="col-sm-9">
+              <input type="text" name="no_tlp" class="form-control" placeholder="Nomor telepon" value="082129269511" readonly>
+            </div>
+          </div>
+          <div id="stts_daftar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-12 m-b-xl">
+    <div class="text-center">
+      <button type="button" name="button" class="btn btn-primary" id="simpan"><i class="fa fa-save"></i><span class="hidden-xs"> Simpan</span></button>
+      <button type="button" name="button" class="btn btn-danger" id="hapus"><i class="fa fa-trash"></i><span class="hidden-xs"> Hapus</span></button>
+      <button type="button" name="button" class="btn btn-warning" id="batal"><i class="fa fa-close"></i><span class="hidden-xs"> Batal</span></button>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  $('select').selectator();
+  // ketika inputbox pencarian no rm/nama pasien diisi
+  $('input:text[name=pasien]').on('keydown',function(e){
+    var baseURL = mlite.url + '/' + mlite.admin;
+    if(event.which==13){
+    var url    = baseURL + '/rawat_jalan/pasien?t=' + mlite.token;
+    var cari = $('input:text[name=pasien]').val();
+
+    if(cari!="") {
+        $.post(url, {cari: cari} ,function(data) {
+        // tampilkan data yang sudah di perbaharui
+          $("#pasien").html(data).show();
+        });
+    }
+    else {
+        $("#pasien").hide();
+    }
+    }
+  });
+  // ketika baris data diklik
+  $("#pasien").on("click", ".pilih", function(event){
+    var baseURL = mlite.url + '/' + mlite.admin;
+    event.preventDefault();
+
+    var no_rkm_medis		   = $(this).attr("data-no_rkm_medis");
+    var nm_pasien    = $(this).attr("data-nm_pasien");
+    var tgl_lahir      = $(this).attr("data-tgl_lahir");
+    var jk  = $(this).attr("data-jk");
+    var alamat         = $(this).attr("data-alamat");
+    var no_tlp	       = $(this).attr("data-no_tlp");
+    var pekerjaan      = $(this).attr("data-pekerjaan");
+
+    var url    				= baseURL + '/rawat_jalan/statusdaftar?t=' + mlite.token;
+
+    $.post(url, {no_rkm_medis: no_rkm_medis} ,function(data) {
+      $("#stts_daftar").html(data).show();
+    });
+    var stts_daftar = $('input:text[name=stts_daftar]').val();
+
+    $('input:text[name=no_rkm_medis]').val(no_rkm_medis);
+    $('input:text[name=nm_pasien]').val(nm_pasien);
+    $('input:text[name=tgl_lahir]').val(tgl_lahir);
+    $('input:text[name=jk]').val(jk);
+    $('input:text[name=alamat]').val(alamat);
+    $('input:text[name=no_tlp]').val(no_tlp);
+    $('input:text[name=pekerjaan]').val(pekerjaan);
+
+    $("#pasien").hide();
+
+  });
+</script>
+<script type="text/javascript">
+   $(function () {
+       $('.tanggal_jam').datetimepicker({
+         format: 'YYYY-MM-DD HH:mm:ss',
+         locale: 'id'
+       });
+   });
+   $(function () {
+       $('.tanggal').datetimepicker({
+         format: 'YYYY-MM-DD',
+         locale: 'id'
+       });
+   });
+   $(function () {
+       $('.jam').datetimepicker({
+         format: 'HH:mm:ss',
+         locale: 'id'
+       });
+   });
+</script>

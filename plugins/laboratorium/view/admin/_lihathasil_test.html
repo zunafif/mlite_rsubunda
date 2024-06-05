@@ -1,0 +1,124 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  	<title>Lihat Hasil Laboratorium Test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+      body{
+        margin: 20px;
+      }
+      .col-md-2 { font-size: 18px;}
+      .col-md-3 { font-size: 18px;}
+      .col-md-4 { font-size: 18px;}
+      .col-md-8 { font-size: 18px;}
+    </style>
+    <script type="text/javascript" src="{?=url()?}/assets/jscripts/jquery.min.js"></script>
+    <script type="text/javascript" src="{?=url()?}/assets/jscripts/jquery.qrcode.js"></script>
+    <script type="text/javascript" src="{?=url()?}/assets/jscripts/qrcode.js"></script>
+</head>
+<body>
+<!-- Hasil Pemeriksaan Lab -->
+  {loop: $pemeriksaan_laboratorium as $reg}
+  {if: $reg.periksa_lab == null}
+  <h4 style="background-color:#ff8a8a; text-align: center;">No Rawat : {$reg.no_rawat} ,Tidak ada pemeriksaan laboratorium!</h4>
+  <br>
+  {/if}
+  {if: $reg.periksa_lab != null}
+  <fieldset style="page-break-before:always;">
+    <table width="100%" bgcolor="#ffffff" align="left" border="0" cellspacing="0" cellpadding="0" class="tbl_form">
+      <tr>
+        <td  width="20%">
+          <img width="75" src="{?=url()?}/{$instansi.logo}"/>
+        </td>
+        <td>
+          <center>
+            <font color="000000" size="5"  face="Tahoma">{$instansi.nama_instansi}</font><br>
+            <font color="000000" size="2"  face="Tahoma">
+              {$instansi.alamat}, {$instansi.kota}, {$instansi.propinsi}<br>
+              Telepon: {$instansi.nomor_telepon} - e-Mail : {$instansi.email}
+            </font>
+            <br><br>
+          </center>
+        </td>
+        <td  width="20%">
+        &nbsp;
+        </td>
+      </tr>
+    </table>
+    <table width="100%" style="border-top: 1px double gray;" class="tbl_form">
+      <tr>
+        <td colspan="2">
+          <center> <h5> HASIL PEMERIKSAAN LABORATORIUM </h5> </center>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <table width="100%" bgcolor="#ffffff" align="left" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="15%"> No.RM </td>
+              <td width="35%"> : {$pasien.no_rkm_medis}</td>
+              <td width="15%"> Penanggung Jawab </td>
+              <td width="35%"> : {$reg.petugas_lab.nm_dokter}</td>
+            </tr>
+            <tr>
+              <td width="15%"> Nama Pasien </td>
+              <td> : {$pasien.nm_pasien}</td>
+              <td width="15%"> Unit/Poliklinik </td>
+              <td> : {$reg.nm_poli}</td>
+            </tr>
+            <tr>
+              <td width="15%"> JK/Umur </td>
+              <td colspan="3"> : {$pasien.jk} / {$pasien.umur}</td>
+            </tr>
+            <tr>
+              <td width="15%"> Alamat </td>
+              <td colspan="3"> : {$pasien.alamat}</td>
+            </tr>
+            <tr>
+              <td width="15%"> No.Periksa </td>
+              <td colspan="3"> : {$reg.no_rawat}</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <table width="100%" border="1" align="center" cellpadding="3px" cellspacing="0" class="tbl_form">
+           <tr align="center">
+             <td valign="top" width="12%" bgcolor="#eee">Tanggal</td>
+             <td valign="top" bgcolor="#eee">Dokter Perujuk</td>
+             <td valign="top" width="20%" bgcolor="#eee">Nama Tindakan</td>
+             <td valign="top" width="15%" bgcolor="#eee">Hasil</td>
+             <td valign="top" width="15%" bgcolor="#eee">Nilai Rujukan</td>
+             <td valign="top" width="20%" bgcolor="#eee">Keterangan</td>
+           </tr>
+           {loop: $reg.periksa_lab}
+           <tr>
+             <th valign="top" width="12%">{$value.tgl_periksa} {$value.jam}</th>
+             <th valign="top">{$value.nm_dokter}</th>
+             <th colspan="4" valign="top">{$value.nm_perawatan}</th>
+           </tr>
+             {loop: $value.detail_periksa_lab as $data}
+             <tr>
+               <td></td>
+               <td></td>
+               <td>{$data.Pemeriksaan}</td>
+               <td>{$data.nilai} {$data.satuan}</td>
+               <td>{$data.nilai_rujukan}</td>
+               <td>{?=nl2br($data.keterangan)?}</td>
+             </tr>
+             {/loop}
+           {/loop}
+          </table>
+        </td>
+      </tr>
+    </table>
+  </fieldset>
+  <br><br>
+  {/if}
+  {/loop}
+</body>
+</html>
